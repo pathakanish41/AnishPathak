@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Neo-Brutalist Design System
+   Bold, unapologetic, colorful. Thick borders, hard shadows, neon accents.
+*/
+
+@layer base {
+  :root {
+    /* Core palette - Brutalist with neon accents */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Primary - Hot Pink */
+    --primary: 300 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Neon Blue */
+    --secondary: 186 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    /* Muted - Light gray */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent - Acid Green */
+    --accent: 84 100% 59%;
+    --accent-foreground: 0 0% 0%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs - Pure black for brutalist */
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 300 100% 50%;
+
+    --radius: 0px;
+
+    /* Custom brutalist colors */
+    --hot-pink: 300 100% 50%;
+    --neon-blue: 186 100% 50%;
+    --acid-green: 84 100% 59%;
+    --brutal-yellow: 60 100% 50%;
+    --brutal-shadow: 0 0% 0%;
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 300 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 84 100% 59%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 0%;
+    --sidebar-ring: 300 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .brutal-shadow {
+    box-shadow: 8px 8px 0px 0px hsl(var(--brutal-shadow));
+  }
+
+  .brutal-shadow-sm {
+    box-shadow: 4px 4px 0px 0px hsl(var(--brutal-shadow));
+  }
+
+  .brutal-shadow-lg {
+    box-shadow: 12px 12px 0px 0px hsl(var(--brutal-shadow));
+  }
+
+  .brutal-shadow-primary {
+    box-shadow: 10px 10px 0px 0px hsl(var(--primary));
+  }
+
+  .brutal-shadow-secondary {
+    box-shadow: 10px 10px 0px 0px hsl(var(--secondary));
+  }
+
+  .brutal-shadow-accent {
+    box-shadow: 10px 10px 0px 0px hsl(var(--accent));
+  }
+
+  .brutal-shadow-yellow {
+    box-shadow: 10px 10px 0px 0px hsl(var(--brutal-yellow));
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 3px black;
+    color: transparent;
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
