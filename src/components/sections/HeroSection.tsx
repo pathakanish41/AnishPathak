@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-black-600"
     >
       <ParticleHero />
       <div className="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
@@ -14,10 +14,11 @@ const HeroSection = () => {
           <span className="bg-primary text-primary-foreground px-4 py-1 text-xl font-black uppercase mb-4 inline-block transform -rotate-2">
             Frontend Developer Intern
           </span>
-          <h1 className="text-6xl md:text-9xl font-black uppercase leading-[0.85] tracking-tighter mb-6">
+          <h1 className="bg-yellow-400 text-black text-6xl md:text-9xl font-black uppercase leading-[0.85] tracking-tighter mb-6">
             ANISH <br />
-            <span className="text-stroke">PATHAK</span>
+            PATHAK
           </h1>
+
           <p className="text-xl md:text-2xl font-bold max-w-lg mb-8 bg-background p-4 border-4 border-foreground brutal-shadow-sm">
             Crafting high-impact UI with React and bold neo-brutalist aesthetics.
             Based in Kathmandu.
