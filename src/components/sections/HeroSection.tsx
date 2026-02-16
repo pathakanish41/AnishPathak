@@ -23,9 +23,14 @@ const HeroSection = () => {
             Frontend Developer dedicated to building high-performance, scalable web applications with React. I bridge the gap between complex backend logic and elegant, user-centric design, delivering polished interfaces that drive engagement in Agile environments.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-accent border-4 border-foreground px-8 py-4 text-xl font-black uppercase brutal-shadow hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all">
+            <a
+              href="/Anish_Pathak_FrontendDeveloper.pdf"
+              download
+              className="bg-accent border-4 border-foreground px-8 py-4 text-xl font-black uppercase brutal-shadow hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all inline-block"
+            >
               Download CV
-            </button>
+            </a>
+
             <div className="flex gap-2">
               <a
                 href={socialLinks.github}
