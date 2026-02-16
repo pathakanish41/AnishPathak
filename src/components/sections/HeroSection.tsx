@@ -51,10 +51,11 @@ const HeroSection = () => {
           <div className="relative w-64 h-64 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-brutal-yellow border-4 border-foreground rounded-full shadow-[20px_20px_0px_0px_hsl(var(--primary))]"></div>
             <div className="absolute inset-4 border-4 border-foreground rounded-full overflow-hidden bg-background flex items-center justify-center">
-              <User size={120} className="text-foreground opacity-20" />
-              <span className="absolute font-black text-6xl opacity-10 uppercase">
-                ANISH
-              </span>
+              <img
+                src="/me.jpeg"
+                alt="Anish Pathak"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

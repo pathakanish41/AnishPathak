@@ -18,7 +18,7 @@ const Navigation = () => {
           className="text-2xl font-black uppercase tracking-tighter cursor-pointer"
           onClick={() => scrollTo("home")}
         >
-          ANISH<span className="text-secondary">.</span>DEV
+          ANISH
         </div>
 
         {/* Desktop Nav */}
