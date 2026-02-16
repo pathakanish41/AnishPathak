@@ -20,8 +20,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl md:text-2xl font-bold max-w-lg mb-8 bg-background p-4 border-4 border-foreground brutal-shadow-sm">
-            Crafting high-impact UI with React and bold neo-brutalist aesthetics.
-            Based in Kathmandu.
+            Frontend Developer dedicated to building high-performance, scalable web applications with React. I bridge the gap between complex backend logic and elegant, user-centric design, delivering polished interfaces that drive engagement in Agile environments.
           </p>
           <div className="flex flex-wrap gap-4">
             <button className="bg-accent border-4 border-foreground px-8 py-4 text-xl font-black uppercase brutal-shadow hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all">
