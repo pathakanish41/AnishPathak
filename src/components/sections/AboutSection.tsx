@@ -16,8 +16,9 @@ const AboutSection = () => {
               Frontend development student with experience in{" "}
               <span className="bg-accent px-1">HTML</span>,{" "}
               <span className="bg-brutal-yellow px-1">CSS</span>,{" "}
+              <span className="bg-brutal-yellow px-1">React</span>,{" "}
               <span className="bg-primary text-primary-foreground px-1">JS</span>, and{" "}
-              <span className="bg-secondary px-1">React</span>.
+              <span className="bg-secondary px-1">Many More</span>.
             </p>
             <div className="flex flex-wrap gap-4">
               {aboutTags.map((tag) => (
