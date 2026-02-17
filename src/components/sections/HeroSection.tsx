@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1">
           <span className="bg-primary text-primary-foreground px-4 py-1 text-xl font-black uppercase mb-4 inline-block transform -rotate-2">
-            Frontend Developer Intern
+            Frontend Developer
           </span>
           <h1 className="bg-yellow-400 text-black text-6xl md:text-9xl font-black uppercase leading-[0.85] tracking-tighter mb-6">
             ANISH <br />
